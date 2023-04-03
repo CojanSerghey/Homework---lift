@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Box Lift (margins)</title>
+    <style>
+    
+        .building{
+            width: 200px;
+            height: 500px;
+            background-color: #999;
+            margin-block: center;
+            margin: 0 auto;
+        }
+        .shaft{
+            width: 50px;
+            height: 500px;
+            background: #333;
+            margin: 0 auto;
+        }
+        .start{
+            width: 40px;
+            height: 5px;
+            background-color: red;
+            margin: 0 auto;
+        }
+        .lift{
+            width: 40px;
+            height: 80px;
+            background: #111;
+            color: white;
+            margin: 0 auto;
+            margin-top: 415px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="building">
+        <div class="shaft">
+            <div class="start"></div>
+            <div class="lift">
+                BOB
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+
+<!-- 1.Daca vom sterge blocul "start" , va disparea linia rosie si tot blocul in intregime se misca in jos , spre mijlocul ecranului
+     2. Blocul "start" reprezinta linia rosie sub forma de div, care marcheaza locul unde liftul se poate opri. Este o reprezentare vizuala a pozitiei de pornire a liftului, de aceea si numele "start". In plus, acesta poate ajuta la determinarea punctului de referinta pentru lift și poate imbunatati vizualizarea cladirii si a axei liftului in raport cu liftul insusi.
+     3.Daca blocului "start" i-am da un margin in partea de jos egala cu aceiasi valoare ca si margin setat liftului, atunci liftul se va muta in jos, iar axa liftului va ramine neschimbata. Daca valoarea va fi mai mare, liftul va ramine la pozitia sa originala si axa liftului va fi mutata în jos.
+-->
